@@ -1,0 +1,129 @@
+.biggest {
+  padding: 60px 0;
+
+  @media (max-width: $breakpoint768) {
+    padding: 30px 0;
+  }
+
+  // .biggest__inner
+
+  &__inner {}
+
+  // .biggest__title
+
+  &__title {}
+
+  // .biggest__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      gap: 40px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      gap: 2px;
+    }
+  }
+
+  // .biggest__item
+
+  &__item {
+    max-width: 384px;
+    padding: 24px;
+    border-radius: 30px;
+    background-color: var(--bg-card);
+
+    @media (max-width: $breakpoint480) {
+      padding: 16px;
+    }
+
+  }
+
+  // .biggest__item-img
+
+  &__item-img {
+    max-width: 100%;
+    margin-bottom: 24px;
+
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .biggest__item-label
+
+  &__item-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: capitalize;
+
+    @media (max-width: $breakpoint480) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  // .biggest__item-label--price
+
+  &__item-label--price {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 32px;
+    color: #ADB9C7;
+
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  // .biggest__footer
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  // .biggest__item-avatar
+
+  &__item-avatar {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 100%;
+  }
+
+  // .biggest__item-nickname
+
+  &__item-nickname {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  // .biggest__item-sum
+
+  &__item-sum {
+    margin-left: auto;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: capitalize;
+
+    @media (max-width: $breakpoint480) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

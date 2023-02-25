@@ -1,0 +1,95 @@
+.artists {
+  padding: 60px 0;
+
+  @media (max-width: $breakpoint768) {
+    padding: 30px 0;
+  }
+
+  // .artists__title
+
+  &__title {}
+
+  // .artists__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 10px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // .artists__item
+
+  &__item {
+    display: grid;
+    justify-items: center;
+  }
+
+  // .artists__picture
+
+  &__picture {
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  // .artists__img
+
+  &__img {
+
+
+    @media (max-width: $breakpoint480) {
+      max-width: 100%;
+    }
+  }
+
+  // .artists__check
+
+  &__check {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  // .artists__nickname
+
+  &__nickname {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: capitalize;
+
+
+    @media (max-width: $breakpoint480) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  // .artists__sum
+
+  &__sum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
