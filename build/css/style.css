@@ -244,6 +244,7 @@ body.locked {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .hero::after {
@@ -1294,6 +1295,10 @@ body.locked {
 
   .partners__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners__item:last-child {
+    display: none;
   }
 
   .partners__item-link {

@@ -34,6 +34,12 @@
     &:nth-child(even) {
       background: var(--bg-card);
     }
+
+    @media (max-width: $breakpoint768) {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 
   // .partners__item-link
